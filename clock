@@ -1,0 +1,20 @@
+# Reverse Clock Program in Python
+
+def main():
+    # Input: Desired hour and minute
+    hour = int(input("Enter the hour (0-23): "))
+    minute = int(input("Enter the minute (0-59): "))
+
+    # Check the validity of input hour and minute
+    if hour < 0 or hour > 23 or minute < 0 or minute > 59:
+        print("Invalid input! Please enter valid hour (0-23) and minute (0-59).")
+    else:
+        # Convert input hour and minute to reverse time
+        reversed_hour = 23 - hour
+        reversed_minute = 59 - minute
+
+        # Display the reverse time
+        print(f"Reversed time: {reversed_hour:02d}:{reversed_minute:02d}")
+
+if __name__ == "__main__":
+    main()
